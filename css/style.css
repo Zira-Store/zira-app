@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #100e17;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #171322;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #a78bfa;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #c9c3d8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+.hero {
+    padding: 100px 10%;
+    background: linear-gradient(135deg, #201832, #100e17);
+}
+
+.tag {
+    color: #a78bfa;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero p {
+    color: #c1bacf;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.primary-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 25px;
+    background: #8b5cf6;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+.primary-button:hover {
+    background: #7041db;
+}
+
+.section {
+    padding: 65px 8%;
+}
+
+.section h2,
+.developer h2 {
+    margin-bottom: 25px;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.app-card {
+    background: #1d1928;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #30283e;
+}
+
+.app-card p {
+    color: #aaa2b8;
+    margin: 12px 0;
+}
+
+.app-card a,
+.developer a {
+    color: #b69aff;
+    text-decoration: none;
+}
+
+.developer {
+    margin: 20px 8% 70px;
+    padding: 35px;
+    background: #201832;
+    border-radius: 12px;
+}
+
+.developer p {
+    color: #c1bacf;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #171322;
+    color: #9991a9;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        gap: 13px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 75px 8%;
+    }
+}
